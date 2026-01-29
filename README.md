@@ -1,5 +1,9 @@
 # Habit Tracker
 
+[![CI](https://github.com/hacker4257/habit-tracker/actions/workflows/ci.yml/badge.svg)](https://github.com/hacker4257/habit-tracker/actions/workflows/ci.yml)
+[![Release](https://github.com/hacker4257/habit-tracker/actions/workflows/release.yml/badge.svg)](https://github.com/hacker4257/habit-tracker/actions/workflows/release.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 一个简洁的个人习惯追踪应用，支持日历视图和活动频率热力图。
 
 ## 技术栈
@@ -90,19 +94,18 @@ export DB_DSN="user:password@tcp(localhost:3306)/habit_tracker?parseTime=true"
 - 响应式设计：支持移动端访问
 - 数据持久化：SQLite（默认）或MySQL
 
-## 为什么不用 Redis/Kafka？
 
-这是一个个人追踪应用，设计原则是**够用就好**：
-
-- **无高并发**：单用户场景，无需缓存层
-- **无消息队列需求**：同步操作足够，无异步处理需求
-- **简单部署**：SQLite零配置，单文件数据库
-
-如需扩展为多用户SaaS，可考虑添加：
-- Redis：会话管理、API限流
-- MySQL：多用户数据隔离
-- 用户认证系统
 
 ## License
 
 MIT
+
+## Contributing
+
+欢迎提交 Issue 和 Pull Request！
+
+1. Fork 本仓库
+2. 创建特性分支 (`git checkout -b feature/amazing-feature`)
+3. 提交更改 (`git commit -m 'Add some amazing feature'`)
+4. 推送到分支 (`git push origin feature/amazing-feature`)
+5. 创建 Pull Request
